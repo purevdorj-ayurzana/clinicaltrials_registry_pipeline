@@ -10,16 +10,11 @@ data for comparison with publication-reported primary-endpoint positivity.
 
 ## Data
 
-The study contains **1,759 exported registry identifiers**, resolving to
-**1,758 canonical trials**, with **54,631 archived historical versions**.
-[Data](data/README.md) includes the frozen classifier handoff, source-cited
-identifier corrections, publication endpoint assessments, and compressed
-ClinicalTrials.gov records. All archived histories are included; live history
-downloads are unnecessary for reproduction.
+The export contains **1,759 NCT identifiers**, representing 1,758 unique trials, because two identifiers referred to the same trial.
+[Data](data/README.md) includes the saved output from the separate RCT abstract classifier, along with documented NCT identifier corrections, and archived ClinicalTrials.gov records. All trial histories are included, so the workflow can be reproduced offline without downloading them again.
 
-Publication classification is described in the
+Abstract classification is described in the
 [companion repository](https://github.com/p-ayurzana/rct_abstract_classifier).
-Its implementation remains separate.
 
 ## LLM-assisted semantic assessment module
 
