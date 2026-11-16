@@ -1,0 +1,36 @@
+{
+  "studyVersion": 5,
+  "study": {
+    "protocolSection": {
+      "identificationModule": {"nctId": "NCT00000002"},
+      "statusModule": {
+        "overallStatus": "RECRUITING",
+        "studyFirstSubmitDate": "2022-01-01",
+        "startDateStruct": {"date": "2021-12-31", "type": "ACTUAL"},
+        "primaryCompletionDateStruct": {"date": "2024-12-02", "type": "ESTIMATED"},
+        "completionDateStruct": {"date": "2025-12-31", "type": "ESTIMATED"},
+        "lastUpdateSubmitDate": "2024-03-19",
+        "lastUpdatePostDateStruct": {"date": "2024-03-21", "type": "ACTUAL"}
+      },
+      "designModule": {
+        "studyType": "OBSERVATIONAL",
+        "designInfo": {"observationalModel": "CASE_CONTROL"},
+        "enrollmentInfo": {"count": 210, "type": "ESTIMATED"}
+      },
+      "outcomesModule": {
+        "primaryOutcomes": [
+          {"measure": "ORR", "description": "Objective response", "timeFrame": "1 year"}
+        ]
+      },
+      "armsInterventionsModule": {},
+      "eligibilityModule": {
+        "eligibilityCriteria": "Inclusion: eligible adults",
+        "minimumAge": "18 Years",
+        "maximumAge": "75 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false
+      }
+    },
+    "hasResults": false
+  }
+}

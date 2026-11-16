@@ -1,0 +1,51 @@
+{
+  "studyVersion": 6,
+  "study": {
+    "protocolSection": {
+      "identificationModule": {"nctId": "NCT00000002"},
+      "statusModule": {
+        "overallStatus": "RECRUITING",
+        "studyFirstSubmitDate": "2022-01-01",
+        "startDateStruct": {"date": "2022-01-02", "type": "ACTUAL"},
+        "primaryCompletionDateStruct": {"date": "2024-12-02", "type": "ESTIMATED"},
+        "completionDateStruct": {"date": "2025-12-31", "type": "ESTIMATED"},
+        "lastUpdateSubmitDate": "2024-03-30",
+        "lastUpdatePostDateStruct": {"date": "2024-04-02", "type": "ACTUAL"}
+      },
+      "designModule": {
+        "studyType": "INTERVENTIONAL",
+        "phases": ["PHASE3"],
+        "designInfo": {
+          "allocation": "RANDOMIZED",
+          "interventionModel": "PARALLEL",
+          "primaryPurpose": "TREATMENT",
+          "maskingInfo": {"masking": "NONE"}
+        },
+        "enrollmentInfo": {"count": 210, "type": "ESTIMATED"}
+      },
+      "outcomesModule": {
+        "primaryOutcomes": [
+          {"measure": "OS", "description": "Overall survival", "timeFrame": "1 year"}
+        ]
+      },
+      "armsInterventionsModule": {
+        "armGroups": [
+          {"label": "Treatment", "type": "EXPERIMENTAL", "description": "Treatment arm", "interventionNames": ["Drug A"]},
+          {"label": "Control", "type": "ACTIVE_COMPARATOR", "description": "Control arm", "interventionNames": ["Drug B"]}
+        ],
+        "interventions": [
+          {"type": "DRUG", "name": "Drug A", "description": "Experimental treatment", "armGroupLabels": ["Treatment"]},
+          {"type": "DRUG", "name": "Drug B", "description": "Control treatment", "armGroupLabels": ["Control"]}
+        ]
+      },
+      "eligibilityModule": {
+        "eligibilityCriteria": "Inclusion: eligible adults\nExclusion: prior Drug A",
+        "minimumAge": "18 Years",
+        "maximumAge": "75 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false
+      }
+    },
+    "hasResults": false
+  }
+}

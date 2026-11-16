@@ -1,0 +1,39 @@
+You will receive distinct primary-outcome states in chronological order, plus selected potential promotion or demotion matches from the ClinicalTrials.gov versions immediately before and after each primary-outcome field change. Matches were selected lexically and may be unrelated.
+
+Determine whether any change constitutes a meaningful change to the trial’s primary outcome(s). Compare both consecutive versions and the first and last versions. A meaningful change counts even if it is reversed in a later version.
+
+Definition:
+A meaningful change is a substantive change to what is measured, how it is assessed, or when it is assessed that is likely to materially affect the probability of a positive primary outcome result.
+
+Count the following as meaningful changes:
+- Replacing a primary outcome with a different outcome, such as changing overall survival to progression-free survival.
+- Adding or removing a distinct primary outcome. Do not count duplication, splitting, merging, or reformulation of entries if the underlying set of primary outcome constructs and their assessment remains substantively unchanged.
+- Changing the actual assessment time point or observation window, such as changing overall survival at 1 year to overall survival at 2 years.
+- Changing the outcome’s definition, components, measurement method, or threshold for success when this is likely to materially affect the probability of a positive result.
+
+Do not count the following as meaningful changes:
+- Spelling, grammar, punctuation, formatting, or other purely editorial changes.
+- Rewording or adding detail that clarifies essentially the same outcome without substantively changing its assessment.
+- Reordering otherwise unchanged primary outcomes.
+
+Establish correspondence between primary outcomes across versions based on meaning, description, measurement, and timeframe. Do not assume that outcomes correspond because they appear in the same list position. For your assessment, first establish which primary outcomes correspond, then assess distinct additions or removals and substantive changes in construct, definition, components, measurement method, threshold, and timing. Apply this across every consecutive pair of versions and compare the earliest and latest versions as a cross-check.
+
+Movement of the same outcome from secondary to primary is an outcome promotion; the reverse is an outcome demotion. Accept one only when title, description, and timeframe together establish the same underlying outcome. Shared topic, population, timeframe, generic wording, or partial component overlap is insufficient. Reject different constructs, populations, components, thresholds, measurements, or estimands. Clerical or explanatory differences may still correspond. Ignore secondary-only changes, never infer an unsupplied secondary, and otherwise apply the ordinary primary-outcome rules.
+
+Assess the outcome title, description, and timeframe together. A textual difference is not itself evidence of a meaningful change. Distinguish actual changes in the outcome or its assessment from changes that merely clarify the existing assessment. Do not infer a substantive change solely because one version provides more detail than another.
+
+Before classifying a matched outcome as meaningfully modified, identify the operational consequence of the change. Ask whether analysts following the old and new specifications would be required to use different observations or calculate a materially different outcome value or estimand. If the supplied text does not establish such a difference, treat the change as clarification rather than meaningful.
+
+Do not classify a change as meaningful merely because the outcome title adds, removes, or substitutes statistical or presentation terms such as “mean,” “change,” “rate,” “number,” “continuous,” or “powered.” Count such wording only when the title, description, and timeframe together establish a different calculation, estimand, reference value, unit of analysis, threshold, event definition, or assessment horizon. When an ambiguous title phrase is unsupported by, or inconsistent with, the operative description and timeframe, give greater weight to the coherent operative specification. For example, do not infer a change-from-baseline endpoint unless a baseline or other reference measurement is specified. A title-only change may still be meaningful when the title clearly and coherently specifies an operationally different endpoint despite a sparse description.
+
+A change in the reported timeframe is meaningful only when it changes the actual endpoint assessment time, observation window, or follow-up period relevant to the outcome. Changes that merely describe data-collection duration or provide more precise follow-up information are not meaningful unless they alter how the outcome itself is evaluated. For time-to-event outcomes, wording such as “up to 2 years,” “through 2 years,” and “at 2 years” ordinarily describes the same two-year follow-up horizon when the event definition and time-to-first-event assessment remain unchanged. Count such a change only when the complete text establishes a different censoring window, landmark analysis, minimum follow-up requirement, or endpoint timepoint.
+
+For cases not explicitly covered above, apply the definition using your judgment. When evidence for an operational difference is ambiguous, do not classify the change as meaningful solely because terminology changed.
+
+Set meaningful_change to true if at least one meaningful change occurred anywhere in the version history; otherwise set it to false. For a true result, identify one decisive comparison and its change type(s). Cite its two actual registry version identifiers as V followed by the version number in chronological order. Prefer a consecutive pair of retained states; use the first and last states only if cumulative drift is decisive. If the decisive comparison is a reclassification, cite the candidate's immediate raw-version boundary. Change types are outcome_replacement, addition, removal, definition_or_components, measurement_method, threshold, timeframe, other, outcome promotion, and outcome demotion. The change types must describe the cited pair.
+
+List each established "outcome promotion" and/or "outcome demotion" once in outcome_reclassifications; otherwise use an empty list. If decisive, include the same label in change_type.
+
+For a false result, return empty change_type, versions, and outcome_reclassifications lists. Return only the structured object specified by the response schema, with no explanation or additional fields.
+
+Trial registration versions:

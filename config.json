@@ -1,0 +1,125 @@
+{
+  "project_name": "ClinicalTrials API History",
+  "project_schema_version": 3,
+  "run_output_root": "reproduced/runs",
+  "clinicaltrials_gov": {
+    "transport": "urllib",
+    "official_api_version_url": "https://clinicaltrials.gov/api/v2/version",
+    "official_study_url": "https://clinicaltrials.gov/api/v2/studies/{nct_id}",
+    "history_index_url": "https://clinicaltrials.gov/api/int/studies/{nct_id}?history=true",
+    "history_version_url": "https://clinicaltrials.gov/api/int/studies/{nct_id}/history/{version}",
+    "timeout_seconds": 30,
+    "max_attempts": 4,
+    "backoff_initial_seconds": 1.0,
+    "request_interval_seconds": 0.5,
+    "user_agent": "ClinicalTrials-API-History/0.1 (academic research; read-only)"
+  },
+  "scalar_fields": [
+    {
+      "label": "study_type",
+      "path": "protocolSection.designModule.studyType"
+    },
+    {
+      "label": "phases",
+      "path": "protocolSection.designModule.phases",
+      "unordered": true
+    },
+    {
+      "label": "allocation",
+      "path": "protocolSection.designModule.designInfo.allocation"
+    },
+    {
+      "label": "intervention_model",
+      "path": "protocolSection.designModule.designInfo.interventionModel"
+    },
+    {
+      "label": "intervention_model_description",
+      "path": "protocolSection.designModule.designInfo.interventionModelDescription"
+    },
+    {
+      "label": "primary_purpose",
+      "path": "protocolSection.designModule.designInfo.primaryPurpose"
+    },
+    {
+      "label": "masking",
+      "path": "protocolSection.designModule.designInfo.maskingInfo.masking"
+    },
+    {
+      "label": "who_masked",
+      "path": "protocolSection.designModule.designInfo.maskingInfo.whoMasked",
+      "unordered": true
+    },
+    {
+      "label": "masking_description",
+      "path": "protocolSection.designModule.designInfo.maskingInfo.maskingDescription"
+    },
+    {
+      "label": "observational_model",
+      "path": "protocolSection.designModule.designInfo.observationalModel"
+    },
+    {
+      "label": "time_perspective",
+      "path": "protocolSection.designModule.designInfo.timePerspective"
+    },
+    {
+      "label": "number_of_arms",
+      "path": "protocolSection.designModule.numberOfArms"
+    },
+    {
+      "label": "enrollment_count",
+      "path": "protocolSection.designModule.enrollmentInfo.count"
+    },
+    {
+      "label": "enrollment_type",
+      "path": "protocolSection.designModule.enrollmentInfo.type"
+    },
+    {
+      "label": "overall_status",
+      "path": "protocolSection.statusModule.overallStatus"
+    },
+    {
+      "label": "why_stopped",
+      "path": "protocolSection.statusModule.whyStopped"
+    },
+    {
+      "label": "study_first_submit_date",
+      "path": "protocolSection.statusModule.studyFirstSubmitDate"
+    },
+    {
+      "label": "start_date",
+      "path": "protocolSection.statusModule.startDateStruct.date"
+    },
+    {
+      "label": "start_date_type",
+      "path": "protocolSection.statusModule.startDateStruct.type"
+    },
+    {
+      "label": "primary_completion_date",
+      "path": "protocolSection.statusModule.primaryCompletionDateStruct.date"
+    },
+    {
+      "label": "primary_completion_date_type",
+      "path": "protocolSection.statusModule.primaryCompletionDateStruct.type"
+    },
+    {
+      "label": "completion_date",
+      "path": "protocolSection.statusModule.completionDateStruct.date"
+    },
+    {
+      "label": "completion_date_type",
+      "path": "protocolSection.statusModule.completionDateStruct.type"
+    },
+    {
+      "label": "last_update_submit_date",
+      "path": "protocolSection.statusModule.lastUpdateSubmitDate"
+    },
+    {
+      "label": "last_update_post_date",
+      "path": "protocolSection.statusModule.lastUpdatePostDateStruct.date"
+    },
+    {
+      "label": "last_update_post_date_type",
+      "path": "protocolSection.statusModule.lastUpdatePostDateStruct.type"
+    }
+  ]
+}

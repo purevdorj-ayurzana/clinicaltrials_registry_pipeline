@@ -1,0 +1,49 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "meaningful_change": {
+      "type": "boolean"
+    },
+    "change_type": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "outcome_replacement",
+          "addition",
+          "removal",
+          "definition_or_components",
+          "measurement_method",
+          "threshold",
+          "timeframe",
+          "other",
+          "outcome promotion",
+          "outcome demotion"
+        ]
+      }
+    },
+    "versions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "outcome_reclassifications": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "outcome promotion",
+          "outcome demotion"
+        ]
+      }
+    }
+  },
+  "required": [
+    "meaningful_change",
+    "change_type",
+    "versions",
+    "outcome_reclassifications"
+  ]
+}

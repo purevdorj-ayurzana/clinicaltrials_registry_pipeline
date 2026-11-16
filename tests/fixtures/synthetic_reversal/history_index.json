@@ -1,0 +1,39 @@
+{
+  "study": {
+    "protocolSection": {
+      "identificationModule": {"nctId": "NCT00000002"}
+    }
+  },
+  "topics": [],
+  "history": {
+    "changes": [
+      {
+        "version": 4,
+        "date": "2024-03-01",
+        "status": "RECRUITING",
+        "studyType": "INTERVENTIONAL",
+        "moduleLabels": ["Study Design", "Outcome Measures"],
+        "lastUpdateSubmitQcDate": "2024-03-01"
+      },
+      {
+        "version": 5,
+        "date": "2024-03-19",
+        "status": "RECRUITING",
+        "studyType": "OBSERVATIONAL",
+        "moduleLabels": ["Study Design", "Arms and Interventions"],
+        "lastUpdateSubmitQcDate": "2024-03-19"
+      },
+      {
+        "version": 6,
+        "date": "2024-03-30",
+        "status": "RECRUITING",
+        "studyType": "INTERVENTIONAL",
+        "moduleLabels": ["Study Design", "Outcome Measures"],
+        "lastUpdateSubmitQcDate": "2024-03-30"
+      }
+    ],
+    "originalData": {},
+    "lastUpdateVersions": {},
+    "outcomesUpdateCount": 0
+  }
+}

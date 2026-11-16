@@ -1,0 +1,8 @@
+harmonized_category,deterministic_definition,llm_definition,deterministic_yes,llm_yes,both_yes,deterministic_only,llm_only,neither,union,jaccard_percent
+outcome added,PRIMARY_OUTCOME_ADDED,change_type contains addition,1079,156,156,923,0,679,1079,14.5
+outcome removed,PRIMARY_OUTCOME_REMOVED,change_type contains removal,1056,35,35,1021,0,702,1056,3.3
+outcome promotion,OUTCOME_PROMOTED_TO_PRIMARY,outcome_reclassifications contains outcome promotion,16,80,16,0,64,1678,80,20.0
+outcome demotion,PRIMARY_OUTCOME_DEMOTED,outcome_reclassifications contains outcome demotion,39,108,37,2,71,1648,110,33.6
+outcome modified,PRIMARY_OUTCOME_TIME_FRAME_CHANGED,"change_type contains any of definition_or_components, measurement_method, timeframe, threshold",420,521,224,196,297,1041,717,31.2
+outcome replaced,No direct deterministic counterpart,change_type contains outcome_replacement,,75,,,,,,
+other,No direct deterministic counterpart,change_type contains other,,3,,,,,,

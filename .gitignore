@@ -1,0 +1,11 @@
+reproduced/
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.env
+.env.*
+.DS_Store
+Thumbs.db

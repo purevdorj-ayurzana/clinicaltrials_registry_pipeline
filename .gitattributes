@@ -1,0 +1,6 @@
+* text=auto eol=lf
+*.csv -text
+/data/** -text
+/prompts/** -text
+/tests/fixtures/** -text
+*.tar.xz binary

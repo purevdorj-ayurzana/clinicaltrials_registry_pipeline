@@ -1,0 +1,6 @@
+stage_number,stage_code,description,starting_trials,excluded_trials,retained_trials,positive_trials,negative_trials
+0,INITIALLY_LINKED_NCT_TRIALS,Distinct exported NCT identifiers with at least one linked publication,1759,0,1759,,
+1,REMOVE_UNCLEAR_ONLY_TRIALS,Remove UNCLEAR assessments and exclude trials with no remaining clear assessment,1759,193,1566,,
+2,EXCLUDE_POSITIVE_NEGATIVE_DISCORDANCE,Exclude trials retaining both POSITIVE and NEGATIVE publication assessments,1566,13,1553,,
+3,EXCLUDE_ORIGINALLY_MULTI_NCT_PUBLICATIONS,Exclude otherwise-eligible trials linked to a clear publication that originally mapped to multiple NCT records,1553,110,1443,993,450
+4,PUBLICATION_TIMING_EVALUABLE,Retained trials with a dated clear PRIMARY_RESULTS publication,1443,33,1410,969,441

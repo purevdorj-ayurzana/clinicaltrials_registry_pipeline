@@ -1,0 +1,6 @@
+[project]
+name = "clinicaltrials-registry-pipeline"
+version = "1.0.0"
+description = "ClinicalTrials.gov registry changes and their association with primary endpoint positivity"
+requires-python = ">=3.12,<3.13"
+dependencies = []

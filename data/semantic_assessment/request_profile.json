@@ -1,0 +1,73 @@
+{
+  "model": "gpt-5.6-sol",
+  "reasoning": {
+    "effort": "medium",
+    "context": "current_turn"
+  },
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "name": "semantic_assessment",
+      "strict": true,
+      "schema": {
+        "type": "object",
+        "properties": {
+          "meaningful_change": {
+            "type": "boolean"
+          },
+          "change_type": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "outcome_replacement",
+                "addition",
+                "removal",
+                "definition_or_components",
+                "measurement_method",
+                "threshold",
+                "timeframe",
+                "other",
+                "outcome promotion",
+                "outcome demotion"
+              ]
+            }
+          },
+          "versions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "outcome_reclassifications": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "outcome promotion",
+                "outcome demotion"
+              ]
+            }
+          }
+        },
+        "required": [
+          "meaningful_change",
+          "change_type",
+          "versions",
+          "outcome_reclassifications"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "verbosity": "low"
+  },
+  "max_output_tokens": 8000,
+  "store": false,
+  "stream": false,
+  "background": false,
+  "service_tier": "default",
+  "truncation": "disabled",
+  "tools": [],
+  "tool_choice": "none",
+  "parallel_tool_calls": false
+}
