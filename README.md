@@ -5,7 +5,7 @@ Identifying ClinicalTrials.gov Registry Changes and Their Association with
 Primary Endpoint Positivity.”**
 
 The pipeline compares historical ClinicalTrials.gov registration records,
-identifies changes using deterministic review rules, and prepares trial-level
+identifies changes using deterministic review rules, as well as an additional LLM-assisted semantic module, and prepares trial-level
 data for comparison with publication-reported primary-endpoint positivity.
 
 ## Data
